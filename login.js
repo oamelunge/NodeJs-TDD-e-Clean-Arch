@@ -1,4 +1,4 @@
-/*const express = require ('express')
+/* const express = require ('express')
 const router = express.Router()
 
 //login file
@@ -6,7 +6,6 @@ module.exports = () => {
   const router = new SignupRouter()
   router.post('/signup', ExpressrouterAdapter.adapt(router))
 }
-
 
 //adapter file
 class ExpressrouterAdapter{
@@ -17,7 +16,7 @@ class ExpressrouterAdapter{
         const httpRequest={
           body:req.body
         }
-        
+
         const httpResponse = router.route(httpRequest)
         res.status(httpResponse).json(body);
     }
@@ -37,18 +36,16 @@ class SignupRouter{
   }
 }
 
-
 //DOMAIN
 //signup-uscase
 class SignupUseCase{
   async signUp(email, password, repeatPassword){
-       
+
       if(password === repeatPassword){
         new AddAccountRepository.add(email, passwor, repeatPassword)
     }
   }
 }
-
 
 //INFRA LAYER
 //AddAccountRepository
