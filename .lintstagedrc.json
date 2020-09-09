@@ -1,0 +1,6 @@
+{
+    "*.js": [
+      "standard --fix --allow-empty",
+      "git add ."
+    ]
+  }
