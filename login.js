@@ -1,4 +1,4 @@
-const express = require ('express')
+/*const express = require ('express')
 const router = express.Router()
 
 //login file
@@ -55,9 +55,9 @@ class SignupUseCase{
 const mongoose = require ('mongoose')
 const AccountModel = mongoose.model('Account')
 class AddAccountRepository{
-  async add(email, password, repeatPassword){
+  async add(email, password, repeatPassword){/
       const user = await AccountModel.create({email,password})
       return user
     }
   }
-}
+*/
