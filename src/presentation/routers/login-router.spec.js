@@ -1,6 +1,7 @@
 const LoginRouter = require('./login-router')
 const MissingParamError = require('../helpers/missing-param-error')
 
+
 describe('Loging Router', () => {
   test('Should return 400 if no email is provided', () => {
     const sut = new LoginRouter()
