@@ -4,3 +4,5 @@
       "git add ."
     ]
   }
+
+  //opcional puede ser que este demas"npm run test:staged --fix",
